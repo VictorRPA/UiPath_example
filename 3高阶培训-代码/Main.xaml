@@ -321,7 +321,7 @@
             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
-        <ui:ReadRange Range="{x:Null}" AddHeaders="True" DataTable="[dtList]" DisplayName="1. 读取范围" sap:VirtualizedContainerService.HintSize="610,87" sap2010:WorkflowViewState.IdRef="ReadRange_1" SheetName="Sheet1" WorkbookPath="群发.xlsx" />
+        <ui:ReadRange Range="{x:Null}" AddHeaders="True" DataTable="[dtList]" DisplayName="1. 读取范围 " sap:VirtualizedContainerService.HintSize="610,87" sap2010:WorkflowViewState.IdRef="ReadRange_1" SheetName="Sheet1" WorkbookPath="群发.xlsx" />
         <ui:ForEachRow CurrentIndex="[stepNo]" DataTable="[dtList]" DisplayName="对于每一个行" sap:VirtualizedContainerService.HintSize="610,1290" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
           <ui:ForEachRow.Body>
             <ActivityAction x:TypeArguments="sd:DataRow">
@@ -340,7 +340,7 @@
                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
-                      <WriteLine DisplayName="写入行" sap:VirtualizedContainerService.HintSize="484,63" sap2010:WorkflowViewState.IdRef="WriteLine_2" Text="[stepNo.ToString]" />
+                      <WriteLine DisplayName="2.写入行" sap:VirtualizedContainerService.HintSize="484,63" sap2010:WorkflowViewState.IdRef="WriteLine_2" Text="[stepNo.ToString]" />
                       <If Condition="[stepNo&gt;=2]" DisplayName="IF 条件" sap:VirtualizedContainerService.HintSize="484,211" sap2010:WorkflowViewState.IdRef="If_2">
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
